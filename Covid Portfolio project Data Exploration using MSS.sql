@@ -1,4 +1,4 @@
-----------------------Our First DataBase [CovidDeaths]---------------------------
+-----------------------------------------------------------------------Our First DataBase [CovidDeaths]------------------------------------------------------------------------  ----------
 select location ,date,total_cases,new_cases,total_deaths,population
 from SqlDataExploration..CovidDeaths
 order by 1,2
@@ -39,7 +39,7 @@ sum(cast(new_deaths as int ))/sum(new_cases)*100 as DeathPercentage
 from SqlDataExploration..CovidDeaths
 where continent is not null
 
-----------------------Our Seconed DataBase [CovidVaccinations]---------------------------
+-------------------------------------------------------------Our Seconed DataBase [CovidVaccinations]---------------------------------------------------------------------------------
 
 --Looking at TOTAL population vs Vaccination
 select death.continent,death.location,death.date,death.population,vacci.new_vaccinations
